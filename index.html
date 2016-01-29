@@ -48,6 +48,45 @@
 
 <p><strong>3.</strong> Add 'az.scroll' module in your main module's list of dependencies</p>
 
+<p><strong>4.</strong> You can use the directive one way</p>
+
+<p><code>&lt;element-scrolling az-scroll="callback"&gt;&lt;/element-scrolling&gt;</code></p>
+
+<p><code>&lt;element-scrolling az-scroll="settings object"&gt;&lt;/element-scrolling&gt;</code></p>
+
+<p>or</p>
+
+<p><code>&lt;any-element az-scroll="callback" az-scroll-container="css selector element's scrolling"&gt;&lt;/any-element&gt;</code></p>
+
+<p><code>&lt;any-element az-scroll="settings object"&gt;&lt;/any-element&gt;</code></p>
+
+<p>If you used "callback" you can use next attributes:</p>
+
+<ul>
+<li>
+<strong>az-scroll-container</strong>="css selector" - used if directive is assigned not on element scroll.</li>
+<li>
+<strong>az-scroll-direction</strong>="top|bottom|topbottom" - еhe boundary which must be checked</li>
+<li>
+<strong>az-scroll-distance-top</strong>="integer value" - offset from top border</li>
+<li>
+<strong>az-scroll-distance-bottom</strong>="integer value" - offset from bottom border</li>
+<li>
+<strong>az-scroll-debounce</strong>="timeout value in millisecound" - timeout value  after run callback</li>
+</ul>
+
+<p>If you used "settings object" you can use next properties of object:</p>
+
+<ul>
+<li><strong>direction</strong></li>
+<li><strong>container</strong></li>
+<li><strong>distanceTop</strong></li>
+<li><strong>distanceBottom</strong></li>
+<li><strong>debounce</strong></li>
+</ul>
+
+<p>The values of this property are the same as for callback </p>
+
 <h1>
 <a id="license" class="anchor" href="#license" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>License</h1>
 
