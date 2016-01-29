@@ -11,7 +11,7 @@
     var module=angular.module('az.scroll',[]);
         module.directive('azScroll', azScroll);
 
-    azScroll.$inject=['$parse'];
+    azScroll.$inject=['$parse','$document'];
 
     function debounce(func, wait, immediate) {
         var timeout;
@@ -29,7 +29,7 @@
         };
     }
 
-    function azScroll($parse,$timeout){
+    function azScroll($parse,$document){
         function link($scope, element, attrs){
 
             var self=this;
@@ -131,6 +131,11 @@
                 }
             }
 
+            $scope.$watch(attrs.azScrollDisable,function(newValue,oldValue){
+                if (newValue===oldValue) return;
+                newValue?disable():enable();
+            });
+
 
             $scope.$watch(attrs.azScroll, function (newValue, oldValue) {
                     destroy();
@@ -151,7 +156,7 @@
                         return;
                     }
 
-                    api.$element=options.container?angular.element(options.container):element;
+                    api.$element=options.container?angular.element(document.querySelector(options.container)):element;
                     api.element=api.$element[0];
 
                     api.bottomDebounce=debounce(function(){
@@ -170,10 +175,7 @@
                 , true);
 
 
-            $scope.$watch(attrs.azScrollDisable,function(newValue,oldValue){
-                if (newValue===oldValue) return;
-                newValue?disable():enable();
-            });
+
 
 
             $scope.$on('$destroy',function(){
