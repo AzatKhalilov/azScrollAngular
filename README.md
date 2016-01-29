@@ -11,5 +11,14 @@
 
 **3.** Add 'az.scroll' module in your main module's list of dependencies
 
+**4.** You can use scroll two ways
+
+`<element-who-scrolling az-scroll="function or setting object"></element-who-scrolling>`
+
+or
+
+`<any-element az-scroll="function or setting object" az-scroll-container="css selector"></any-element>`
+
+
 #License
 azScrollAngular is licensed under the MIT license. See the LICENSE file for more details.
