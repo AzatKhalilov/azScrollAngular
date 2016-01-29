@@ -1,6 +1,6 @@
 {
   "name": "azScrollAngular",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "homepage": "https://github.com/AzatKhalilov/azScrollAngular",
   "authors": [
     "Azat Khalilov <zminexx@gmail.com>"
@@ -8,6 +8,6 @@
   "description": "Lightweight, cross-browser infinite scroll(angular version)",
   "license": "MIT",
   "dependencies": {
-    "angular": ">=1.3.0"
+    "angular": ">=1.3.0 <2.x.x"
   }
 }
