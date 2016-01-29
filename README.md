@@ -11,13 +11,35 @@
 
 **3.** Add 'az.scroll' module in your main module's list of dependencies
 
-**4.** You can use scroll two ways
+**4.** You can use the directive one way
 
-`<element-who-scrolling az-scroll="function or setting object"></element-who-scrolling>`
+`<element-scrolling az-scroll="callback"></element-scrolling>`
+
+`<element-scrolling az-scroll="settings object"></element-scrolling>`
 
 or
 
-`<any-element az-scroll="function or setting object" az-scroll-container="css selector"></any-element>`
+`<any-element az-scroll="callback" az-scroll-container="css selector element's scrolling"></any-element>`
+
+`<any-element az-scroll="settings object"></any-element>`
+
+If you used "callback" you can use next attributes:
+
+
++ az-scroll-container="css selector" - used if directive is assigned not on element scroll.
++ az-scroll-direction="top|bottom|topBottom" - еhe boundary which must be checked
++ az-scroll-distance-top="integer value" - offset from top border
++ az-scroll-distance-bottom="integer value" - offset from bottom border
++ az-scroll-debounce="timeout value" - debounce value  before run callback
+
+If you used "settings object" you can use next properties of object:
++ direction
++ container
++ distanceTop
++ distanceBottom
++ debounce
+
+The values of this property are the same as for callback 
 
 
 #License
