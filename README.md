@@ -28,7 +28,7 @@ If you used "callback" you can use next attributes:
 
 
 + **az-scroll-container**="css selector" - used if directive is assigned not on element scroll.
-+ **az-scroll-direction**="top|bottom|topbottom" - еhe boundary which must be checked
++ **az-scroll-direction**="top|bottom|topbottom" - the boundary which must be checked
 + **az-scroll-distance-top**="integer value" - offset from top border
 + **az-scroll-distance-bottom**="integer value" - offset from bottom border
 + **az-scroll-debounce**="timeout value in millisecound" - timeout value  after run callback
