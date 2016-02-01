@@ -31,7 +31,7 @@ If you used "callback" you can use next attributes:
 + **az-scroll-direction**="top|bottom|topbottom" - the boundary which must be checked
 + **az-scroll-distance-top**="integer value" - offset from top border
 + **az-scroll-distance-bottom**="integer value" - offset from bottom border
-+ **az-scroll-debounce**="timeout value in millisecound" - timeout value  after run callback
++ **az-scroll-debounce**="timeout value in millisecound" - The delay after which the callback will be called
 
 If you used "settings object" you can use next properties of object:
 + **direction**
@@ -40,7 +40,7 @@ If you used "settings object" you can use next properties of object:
 + **distanceBottom**
 + **debounce**
 
-The values of this property are the same as for callback 
+The values of this property are the same as for callback version 
 
 
 #License
