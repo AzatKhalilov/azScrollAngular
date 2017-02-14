@@ -5,7 +5,8 @@
 
 + or clone this repository
 + or [download by link](https://github.com/AzatKhalilov/azScrollAngular/blob/master/src/js/azScrollAngular.js)
-+ or via [Bower](http://bower.io/) by running: bower install azScrollAngular
++ or via [Bower](http://bower.io/) by running: bower install azScrollAngular --save
++ or via [NPM](http://npmjs.com/) by running: npm install azScrollAngular --save
 
 **2.** Include azScrollAngular.js in your index.html
 
