@@ -6,7 +6,7 @@
  * @author Azat Khalilov
  * @version 1.0.0
  */
-(function($){
+(function(){
 
     var module=angular.module('az.scroll',[]);
         module.directive('azScroll', azScroll);
@@ -190,4 +190,4 @@
             link: link
         };
     }
-})(jQuery);
+})();
